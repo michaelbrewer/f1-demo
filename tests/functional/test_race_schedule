@@ -76,5 +76,5 @@ interactions:
     status:
       code: 200
       message: OK
-    url: http://ergast.com/api/f1/2021.json
+    url: https://ergast.com/api/f1/2021.json
 version: 1
