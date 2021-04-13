@@ -3,6 +3,7 @@ from typing import Dict
 
 import aiohttp
 from aiohttp import ClientTimeout
+from aws_lambda_powertools.tracing import aiohttp_trace_config
 
 
 class F1Client:
@@ -15,6 +16,7 @@ class F1Client:
         return aiohttp.ClientSession(
             timeout=ClientTimeout(total=self.timeout),
             headers={"Content-Type": "application-json"},
+            trace_configs=[aiohttp_trace_config()],
         )
 
     async def schedule(self, season: str = "current") -> Dict:
