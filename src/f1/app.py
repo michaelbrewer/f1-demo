@@ -1,6 +1,6 @@
 import asyncio
 import json
-from typing import Dict, Any, Union
+from typing import Any, Dict, Union
 
 from aws_lambda_powertools import Logger, Tracer
 from aws_lambda_powertools.utilities.typing import LambdaContext
