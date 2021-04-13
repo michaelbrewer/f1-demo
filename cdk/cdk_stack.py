@@ -15,7 +15,7 @@ class CdkStack(cdk.Stack):
             handler="f1.app.lambda_handler",
             runtime=aws_lambda.Runtime.PYTHON_3_8,
             environment={
-                "LOGGING": "DEBUG",
+                "LOG_LEVEL": "DEBUG",
                 "POWERTOOLS_SERVICE_NAME": "f1",
                 "POWERTOOLS_METRICS_NAMESPACE": "f1-stats",
             },
