@@ -1137,17 +1137,17 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xm
 
 [[package]]
 name = "pytest-asyncio"
-version = "0.14.0"
+version = "0.15.1"
 description = "Pytest support for asyncio."
 category = "dev"
 optional = false
-python-versions = ">= 3.5"
+python-versions = ">= 3.6"
 
 [package.dependencies]
 pytest = ">=5.4.0"
 
 [package.extras]
-testing = ["async-generator (>=1.3)", "coverage", "hypothesis (>=5.7.1)"]
+testing = ["coverage", "hypothesis (>=5.7.1)"]
 
 [[package]]
 name = "python-dateutil"
@@ -1421,7 +1421,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "63d7b107f59b1c1de85eb56cfbdf4aeebb749f7a5fe1891db0d4ec67748d5732"
+content-hash = "82f1bb35f6ff113d948f3091d3a4777e0e98267424164dbb33332738b475a385"
 
 [metadata.files]
 aiodns = [
@@ -2042,8 +2042,8 @@ pytest = [
     {file = "pytest-6.2.4.tar.gz", hash = "sha256:50bcad0a0b9c5a72c8e4e7c9855a3ad496ca6a881a3641b4260605450772c54b"},
 ]
 pytest-asyncio = [
-    {file = "pytest-asyncio-0.14.0.tar.gz", hash = "sha256:9882c0c6b24429449f5f969a5158b528f39bde47dc32e85b9f0403965017e700"},
-    {file = "pytest_asyncio-0.14.0-py3-none-any.whl", hash = "sha256:2eae1e34f6c68fc0a9dc12d4bea190483843ff4708d24277c41568d6b6044f1d"},
+    {file = "pytest-asyncio-0.15.1.tar.gz", hash = "sha256:2564ceb9612bbd560d19ca4b41347b54e7835c2f792c504f698e05395ed63f6f"},
+    {file = "pytest_asyncio-0.15.1-py3-none-any.whl", hash = "sha256:3042bcdf1c5d978f6b74d96a151c4cfb9dcece65006198389ccd7e6c60eb1eea"},
 ]
 python-dateutil = [
     {file = "python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"},
