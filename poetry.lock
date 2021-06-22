@@ -908,7 +908,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "moto"
-version = "2.0.8"
+version = "2.0.10"
 description = "A library that allows your python tests to easily mock out the boto library"
 category = "dev"
 optional = false
@@ -928,7 +928,7 @@ jsondiff = {version = ">=1.1.2", optional = true, markers = "extra == \"all\""}
 MarkupSafe = "!=2.0.0a1"
 more-itertools = "*"
 python-dateutil = ">=2.1,<3.0.0"
-python-jose = {version = ">=3.1.0,<4.0.0", extras = ["cryptography"], optional = true, markers = "extra == \"all\""}
+python-jose = {version = ">=3.1.0,<4.0.0", extras = ["cryptography"], optional = true, markers = "python_version > \"3\" and extra == \"all\""}
 pytz = "*"
 PyYAML = {version = ">=5.1", optional = true, markers = "extra == \"all\""}
 requests = ">=2.5"
@@ -939,18 +939,18 @@ werkzeug = "*"
 xmltodict = "*"
 
 [package.extras]
-all = ["PyYAML (>=5.1)", "python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (<0.15)", "docker (>=2.5.1)", "jsondiff (>=1.1.2)", "aws-xray-sdk (>=0.93,!=0.96)", "idna (>=2.5,<3)", "cfn-lint (>=0.4.0)", "decorator (<=4.4.2)", "sshpubkeys (==3.1.0)", "sshpubkeys (>=3.1.0)"]
-apigateway = ["python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (<0.15)"]
+all = ["PyYAML (>=5.1)", "ecdsa (<0.15)", "docker (>=2.5.1)", "jsondiff (>=1.1.2)", "aws-xray-sdk (>=0.93,!=0.96)", "idna (>=2.5,<3)", "cfn-lint (>=0.4.0)", "python-jose[cryptography] (>=3.1.0,<3.3.0)", "decorator (<=4.4.2)", "sshpubkeys (==3.1.0)", "python-jose[cryptography] (>=3.1.0,<4.0.0)", "sshpubkeys (>=3.1.0)"]
+apigateway = ["ecdsa (<0.15)", "python-jose[cryptography] (>=3.1.0,<3.3.0)", "python-jose[cryptography] (>=3.1.0,<4.0.0)"]
 awslambda = ["docker (>=2.5.1)"]
 batch = ["docker (>=2.5.1)"]
 cloudformation = ["docker (>=2.5.1)", "PyYAML (>=5.1)", "cfn-lint (>=0.4.0)", "decorator (<=4.4.2)"]
-cognitoidp = ["python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (<0.15)"]
+cognitoidp = ["ecdsa (<0.15)", "python-jose[cryptography] (>=3.1.0,<3.3.0)", "python-jose[cryptography] (>=3.1.0,<4.0.0)"]
 dynamodb2 = ["docker (>=2.5.1)"]
 dynamodbstreams = ["docker (>=2.5.1)"]
 ec2 = ["docker (>=2.5.1)", "sshpubkeys (==3.1.0)", "sshpubkeys (>=3.1.0)"]
 iotdata = ["jsondiff (>=1.1.2)"]
 s3 = ["PyYAML (>=5.1)"]
-server = ["PyYAML (>=5.1)", "python-jose[cryptography] (>=3.1.0,<4.0.0)", "ecdsa (<0.15)", "docker (>=2.5.1)", "jsondiff (>=1.1.2)", "aws-xray-sdk (>=0.93,!=0.96)", "idna (>=2.5,<3)", "cfn-lint (>=0.4.0)", "flask", "flask-cors", "decorator (<=4.4.2)", "sshpubkeys (==3.1.0)", "sshpubkeys (>=3.1.0)"]
+server = ["PyYAML (>=5.1)", "ecdsa (<0.15)", "docker (>=2.5.1)", "jsondiff (>=1.1.2)", "aws-xray-sdk (>=0.93,!=0.96)", "idna (>=2.5,<3)", "cfn-lint (>=0.4.0)", "flask", "flask-cors", "python-jose[cryptography] (>=3.1.0,<3.3.0)", "decorator (<=4.4.2)", "sshpubkeys (==3.1.0)", "python-jose[cryptography] (>=3.1.0,<4.0.0)", "sshpubkeys (>=3.1.0)"]
 ses = ["docker (>=2.5.1)"]
 sns = ["docker (>=2.5.1)"]
 sqs = ["docker (>=2.5.1)"]
@@ -1421,7 +1421,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "7ecf0013d6e303e51d1e36d328367164d8c36487131d58ddfd08661df3a58cc4"
+content-hash = "eb31a2438987e00b473b07a40489c3b5e9d015da392cbdd78e3e19b2e238ad4c"
 
 [metadata.files]
 aiodns = [
@@ -1877,8 +1877,8 @@ more-itertools = [
     {file = "more_itertools-8.8.0-py3-none-any.whl", hash = "sha256:2cf89ec599962f2ddc4d568a05defc40e0a587fbc10d5989713638864c36be4d"},
 ]
 moto = [
-    {file = "moto-2.0.8-py2.py3-none-any.whl", hash = "sha256:b5b4c596d6f44fe1f658429d0313a649d0861d7df91b2dbdb5cc20d1bb8daf39"},
-    {file = "moto-2.0.8.tar.gz", hash = "sha256:812dcfdb460e6d43236f2c0f7774ede038716daef6db8a09dc5c16ea7e4de931"},
+    {file = "moto-2.0.10-py2.py3-none-any.whl", hash = "sha256:fe7b8b15b7dea9de56fa88a0e3f53ce54f8d584590161b210cce71d01cc97899"},
+    {file = "moto-2.0.10.tar.gz", hash = "sha256:f205da54d5e9442450a519dbe5bb49c31d9f496b551a84648afa01a360fd4b82"},
 ]
 multidict = [
     {file = "multidict-5.1.0-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:b7993704f1a4b204e71debe6095150d43b2ee6150fa4f44d6d966ec356a8d61f"},
