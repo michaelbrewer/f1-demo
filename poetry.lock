@@ -536,20 +536,20 @@ d = ["aiohttp (>=3.3.2)", "aiohttp-cors"]
 
 [[package]]
 name = "boto3"
-version = "1.17.79"
+version = "1.17.100"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
 [package.dependencies]
-botocore = ">=1.20.79,<1.21.0"
+botocore = ">=1.20.100,<1.21.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.4.0,<0.5.0"
 
 [[package]]
 name = "botocore"
-version = "1.20.79"
+version = "1.20.100"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
@@ -561,7 +561,7 @@ python-dateutil = ">=2.1,<3.0.0"
 urllib3 = ">=1.25.4,<1.27"
 
 [package.extras]
-crt = ["awscrt (==0.11.15)"]
+crt = ["awscrt (==0.11.24)"]
 
 [[package]]
 name = "brotlipy"
@@ -1421,7 +1421,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "518f9113ce0bd66f7ffa043ca75427a57390a19f6819a38c7c86305b1666975d"
+content-hash = "281dd1551a0891f7cab7d81814d5ca8abb5bc9c73c79f28acd6715eb5558e422"
 
 [metadata.files]
 aiodns = [
@@ -1596,12 +1596,12 @@ black = [
     {file = "black-20.8b1.tar.gz", hash = "sha256:1c02557aa099101b9d21496f8a914e9ed2222ef70336404eeeac8edba836fbea"},
 ]
 boto3 = [
-    {file = "boto3-1.17.79-py2.py3-none-any.whl", hash = "sha256:1815748c9409e6d9a13a88a4f59c49d42c5d873a116c95ef18092ed3bd20b1c5"},
-    {file = "boto3-1.17.79.tar.gz", hash = "sha256:ccc2c2e412d31b9e542c525764c059f7523cf5268b0ce3c5b244f4df29367d9c"},
+    {file = "boto3-1.17.100-py2.py3-none-any.whl", hash = "sha256:ab767dffc34e3093d4c4d0b40a6387129661e24de2ae06a8eaefb92739447ad9"},
+    {file = "boto3-1.17.100.tar.gz", hash = "sha256:0cdb443db72787eff296138952f952529d49dba00d67d5652017d2584daab33a"},
 ]
 botocore = [
-    {file = "botocore-1.20.79-py2.py3-none-any.whl", hash = "sha256:7518c3f028123f2c770cf1e568f24877259e0ec03badef657174fa93392a9e6a"},
-    {file = "botocore-1.20.79.tar.gz", hash = "sha256:b69c96f210a79f544c6dea923f708873121c174b8b4d72babd725328bf53e3d2"},
+    {file = "botocore-1.20.100-py2.py3-none-any.whl", hash = "sha256:55da43d99d1ed5f51fa65d71f30ecdfb5f9d8b0874c0c3e63264121bd88e0cab"},
+    {file = "botocore-1.20.100.tar.gz", hash = "sha256:1331c6a9aafa1a893b20d9ee71abdb52c9bb4e5f7197e82153c371e1856e645d"},
 ]
 brotlipy = [
     {file = "brotlipy-0.7.0-cp27-cp27m-macosx_10_6_intel.whl", hash = "sha256:af65d2699cb9f13b26ec3ba09e75e80d31ff422c03675fcb36ee4dabe588fdc2"},
