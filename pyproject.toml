@@ -8,7 +8,7 @@ authors = ["Michael Brewer <michael.brewer@gyft.com>"]
 python = "^3.8"
 boto3 = "^1.17.44"
 aiohttp = {extras = ["speedups"], version = "^3.7.4"}
-aws-lambda-powertools = "^1.17.0"
+aws-lambda-powertools = "^1.17.1"
 
 [tool.poetry.dev-dependencies]
 moto = {extras = ["all"], version = "^2.0.10"}
