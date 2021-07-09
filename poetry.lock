@@ -468,7 +468,7 @@ publication = ">=0.0.3"
 
 [[package]]
 name = "aws-lambda-powertools"
-version = "1.17.0"
+version = "1.17.1"
 description = "Python utilities for AWS Lambda functions including but not limited to tracing, logging and custom metric"
 category = "main"
 optional = false
@@ -1414,7 +1414,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "82899b7c96afcd427fd172c0b0c3d34a861ca3f27c1ace108acbab90904d90df"
+content-hash = "d98c83f0bc5eb7ef9fd2a462d32af06c80503d8acac5176d65bbfad808b8c9bb"
 
 [metadata.files]
 aiodns = [
@@ -1573,8 +1573,8 @@ attrs = [
     {file = "aws_cdk.region_info-1.105.0-py3-none-any.whl", hash = "sha256:d7101f8f4c853aa4652b2e5ab3299de74984c4ad6c9d777045f673e94f458b86"},
 ]
 aws-lambda-powertools = [
-    {file = "aws_lambda_powertools-1.17.0-py3-none-any.whl", hash = "sha256:3cbb5f6c9916b2356800280250d7ecbc1d1c3e614c07635770253549cea6d1b7"},
-    {file = "aws_lambda_powertools-1.17.0.tar.gz", hash = "sha256:d77b482f62c305c3c841b97daab4c682d01797f1827b2976a10bd36a1d4bc21d"},
+    {file = "aws_lambda_powertools-1.17.1-py3-none-any.whl", hash = "sha256:a4a53118e27a4c9b721b910d60979a4f97f32a90e15581256bcd658a15ae1ece"},
+    {file = "aws_lambda_powertools-1.17.1.tar.gz", hash = "sha256:86533336d556116388ca8f27aff855b06d88616a520b61966b5f6cd8927546aa"},
 ]
 aws-sam-translator = [
     {file = "aws-sam-translator-1.35.0.tar.gz", hash = "sha256:5cf7faab3566843f3b44ef1a42a9c106ffb50809da4002faab818076dcc7bff8"},
