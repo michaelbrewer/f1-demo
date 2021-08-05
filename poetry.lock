@@ -1248,7 +1248,7 @@ tests = ["coverage (>=3.7.1,<6.0.0)", "pytest-cov", "pytest-localserver", "flake
 
 [[package]]
 name = "rich"
-version = "10.4.0"
+version = "10.7.0"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
 category = "dev"
 optional = false
@@ -1414,7 +1414,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d98c83f0bc5eb7ef9fd2a462d32af06c80503d8acac5176d65bbfad808b8c9bb"
+content-hash = "e3b33e9a0e7829617a7b41b3b81d68eb0016813b7781fd8ae21f9f445ea1c4b3"
 
 [metadata.files]
 aiodns = [
@@ -2148,8 +2148,8 @@ responses = [
     {file = "responses-0.13.3.tar.gz", hash = "sha256:18a5b88eb24143adbf2b4100f328a2f5bfa72fbdacf12d97d41f07c26c45553d"},
 ]
 rich = [
-    {file = "rich-10.4.0-py3-none-any.whl", hash = "sha256:9fb2404c4e870d4de3837c11d0cd1f26c44725865535caba1379c2343a49f6a1"},
-    {file = "rich-10.4.0.tar.gz", hash = "sha256:6e8a3e2c61e6cf6193bfcffbb89865a0973af7779d3ead913fdbbbc33f457c2c"},
+    {file = "rich-10.7.0-py3-none-any.whl", hash = "sha256:517b4e0efd064dd1fe821ca93dd3095d73380ceac1f0a07173d507d9b18f1396"},
+    {file = "rich-10.7.0.tar.gz", hash = "sha256:13ac80676e12cf528dc4228dc682c8402f82577c2aa67191e294350fa2c3c4e9"},
 ]
 rsa = [
     {file = "rsa-4.7.2-py3-none-any.whl", hash = "sha256:78f9a9bf4e7be0c5ded4583326e7461e3a3c5aae24073648b4bdfa797d78c9d2"},
