@@ -13,7 +13,7 @@ class CdkStack(cdk.Stack):
             id="f1Function",
             function_name="f1-dev",
             handler="f1.app.lambda_handler",
-            runtime=aws_lambda.Runtime.PYTHON_3_8,
+            runtime=aws_lambda.Runtime.PYTHON_3_9,
             environment={
                 "LOG_LEVEL": "DEBUG",
                 "POWERTOOLS_SERVICE_NAME": "f1",
@@ -22,10 +22,11 @@ class CdkStack(cdk.Stack):
             tracing=Tracing.ACTIVE,
             memory_size=1024,
             timeout=Duration.seconds(60),
+            architecture=aws_lambda.Architecture.ARM_64,
             code=Code.from_asset(
                 "src/",
                 bundling=BundlingOptions(
-                    image=Runtime.PYTHON_3_8.bundling_image,
+                    image=Runtime.PYTHON_3_9.bundling_image,
                     command=[
                         "bash",
                         "-c",
